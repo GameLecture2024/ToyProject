@@ -4,19 +4,18 @@ using UnityEngine;
 
 namespace UnityLearn
 {
-    public class Player : MonoBehaviour
+    public class Domino : MonoBehaviour
     {
         // Start is called before the first frame update
         void Start()
         {
-            Debug.Log(" Start함수 입니다.");
-            Debug.Log("여기에 로그를 작성하면 Console창에 출력됩니다.");
+            Debug.Log($"나의 이름은 : {gameObject.name}");
         }
 
         // Update is called once per frame
         void Update()
         {
-           
+        
         }
     }
 }
