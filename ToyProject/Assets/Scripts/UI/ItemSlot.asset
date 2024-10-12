@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d63ec620c5240a4994fddbbdf8a62cc, type: 3}
+  m_Name: ItemSlot
+  m_EditorClassIdentifier: 
+  images:
+  - {fileID: 21300000, guid: 2974b4f6faa367040be5bf18dddfdcc8, type: 3}
+  - {fileID: 21300000, guid: 09ca6109e11532e4da078f92db0d5c0e, type: 3}
+  - {fileID: 21300000, guid: 38b54c827c23b8142aa807e69a560b0b, type: 3}
+  - {fileID: 21300000, guid: c3b9c72adb5fdad4d8a68c2ad541e762, type: 3}
