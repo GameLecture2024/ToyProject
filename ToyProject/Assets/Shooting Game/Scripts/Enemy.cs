@@ -10,6 +10,8 @@ namespace ClassStudy
         public float speed = 5;
         private Vector3 dir;    // 멤버 변수여서 함수에서 같이 사용할 수 있다.
 
+        public GameObject[] explosionFactory; // 1. Smoke, 2. fire 외부에서 만들어진 프리팹을 연결해준다.
+
         private void Start()
         {
             int randValue = UnityEngine.Random.Range(0, 10); //  
@@ -37,6 +39,19 @@ namespace ClassStudy
         private void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag("DeadZone")) return;
+
+            if (other.CompareTag("Bullet"))
+            {
+                GameObject fire = Instantiate(explosionFactory[1]);
+                fire.transform.position = transform.position;
+            }
+
+            if (other.CompareTag("Player"))
+            {
+                GameObject smoke = Instantiate(explosionFactory[0]);
+                smoke.transform.position = transform.position;
+            }
+
 
             Destroy(other.gameObject); // 충돌한 대상 없애버린다.
             Destroy(gameObject);       // 나도 없애버린다.

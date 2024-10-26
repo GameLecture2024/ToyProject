@@ -6,6 +6,7 @@ TagManager:
   tags:
   - NonDisable
   - DeadZone
+  - Bullet
   layers:
   - Default
   - TransparentFX
